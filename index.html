@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Владислав Субботин — Senior / Lead Backend Developer</title>
+    <style>
+        :root {
+            --text: #1f2328;
+            --muted: #57606a;
+            --accent: #0b5cad;
+            --line: #e3e6ea;
+            --bg: #ffffff;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background: #f4f5f7;
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 32px auto;
+            background: var(--bg);
+            padding: 48px 56px;
+            border-radius: 10px;
+            box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
+        }
+
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: flex-start;
+            gap: 32px;
+            padding-bottom: 8px;
+        }
+
+        .header img {
+            width: 240px;
+            height: auto;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .header .name {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .header .role {
+            font-size: 19px;
+            color: var(--muted);
+            margin: 6px 0 18px;
+        }
+
+        .header .meta {
+            margin: 0 0 12px;
+            font-size: 15px;
+        }
+
+        .header .meta b { color: var(--text); }
+
+        /* Sections */
+        h2 {
+            font-size: 22px;
+            margin: 36px 0 14px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .job { margin-top: 22px; }
+
+        .job h3 {
+            font-size: 18px;
+            margin: 0 0 2px;
+        }
+
+        .job .dates {
+            color: var(--muted);
+            font-style: italic;
+            font-size: 14px;
+            margin: 0 0 10px;
+        }
+
+        .job .summary { margin: 0 0 10px; }
+
+        .group-title {
+            font-weight: 700;
+            margin: 14px 0 6px;
+        }
+
+        .subrole {
+            font-weight: 700;
+            margin: 16px 0 6px;
+        }
+
+        .subrole .subdates {
+            font-weight: 400;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        ul { margin: 6px 0 12px; padding-left: 22px; }
+        li { margin-bottom: 6px; }
+
+        .about p { margin: 0 0 14px; }
+
+        .quals { margin: 6px 0 0; padding-left: 22px; }
+
+        @media (max-width: 640px) {
+            .page { padding: 28px 22px; margin: 0; border-radius: 0; }
+            .header { flex-direction: column; align-items: center; text-align: center; }
+            .header img { width: 200px; }
+        }
+
+        @media print {
+            body { background: #fff; font-size: 12pt; }
+            .page { box-shadow: none; margin: 0; max-width: none; padding: 0; border-radius: 0; }
+            a { color: var(--text); }
+            h2, h3, .group-title, .subrole {
+                page-break-after: avoid;
+                break-after: avoid;
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+            li { page-break-inside: avoid; break-inside: avoid; }
+            .experience { page-break-before: always; break-before: page; }
+            .job:first-of-type { page-break-before: avoid; break-before: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+
+        <header class="header">
+            <img src="cv.jpeg" alt="Владислав Субботин">
+            <div>
+                <p class="name">Владислав Субботин</p>
+                <p class="role">Senior / Lead Backend Developer</p>
+                <p class="meta">Коммерческий опыт: 9 лет<br>Локация: удалённо</p>
+                <p class="meta"><b>Основной стек:</b><br>PHP, Symfony, MySQL, PostgreSQL, RabbitMQ, Kafka, Elasticsearch, Redis, Linux, Bash, Nginx, GitLab CI/CD, Docker, Kubernetes</p>
+                <p class="meta"><b>Дополнительно:</b><br>Python, TypeScript, Go, ClickHouse, YDB, Grafana, Prometheus, Loki, Jaeger (OpenTelemetry)</p>
+                <p class="meta"><b>Telegram:</b> <a href="https://t.me/subbotinv" target="_blank">@subbotinv</a></p>
+            </div>
+        </header>
+
+        <section class="about">
+            <h2>О себе</h2>
+            <p>Меня зовут Владислав, я бэкендер с 9 годами опыта в продуктовой разработке. За время работы в IT побывал в ролях DevOps-инженера и тимлида (текущая роль).</p>
+            <p>Работал в сферах игровой и музыкальной дистрибьюции, недвижимости и в маркетинге. В текущей компании получил опыт работы с высоконагруженными системами (HighLoad), проектировал, развивал и поддерживал такие системы. С чем не приходилось работать ранее - быстро разбираюсь в силу своего опыта, особенно в роли DevOps, где этот навык необходим.</p>
+            <p>В последние 2 года решаю задачи преимущественно с Cursor: сперва собираю требования и юзкейсы, проектирую фичу, и только потом сажусь за реализацию. Код руками не забросил - пишу в своих пет-проектах, чтобы не растерять навык "на кончиках пальцев".</p>
+            <p>Если вы ищете сильного специалиста, который будет не просто хорошо делать работу, а будет вовлечён в продукт, сможет улучшать процессы и готов брать на себя задачи за пределами своей области ответственности, то вам определённо стоит <a href="https://t.me/subbotinv" target="_blank">написать мне</a> - обсудим детали.</p>
+        </section>
+
+        <section class="experience">
+            <h2>Опыт работы</h2>
+
+            <div class="job">
+                <h3>BotHelp — Senior Backend Developer / Team Lead</h3>
+                <p class="dates">апрель 2023 - настоящее время</p>
+                <p class="summary">BotHelp - платформа автоматизации маркетинга и продаж: конструктор чат-ботов и массовых рассылок в мессенджерах с миллионным ежедневным трафиком. Пришёл бэкендером, вырос до ведущего разработчика и тимлида команды из 5-7 человек. Основная разработка - на PHP/Symfony.</p>
+
+                <p class="group-title">Технологии и продукт</p>
+                <ul>
+                    <li>В одиночку реализовал новый сервис массовых рассылок (архитектуру прорабатывал вместе с техническим директором) - сейчас это больше половины всего функционала платформы. Вёл его сам от первого коммита до прода и сопровождения.</li>
+                    <li>Написал по сервису рассылок документацию и провёл воркшоп - после этого соседняя команда работает с ним самостоятельно, без моего участия.</li>
+                    <li>Спроектировал и довёл до прода RAG-систему на Python, от дизайна до релиза: стабильно работает и не оттягивает на себя ресурсы разработки.</li>
+                    <li>Реализовал фичи AI-агента: генерацию изображений, буферизацию запросов подписчиков, докупку и автодокупку токенов.</li>
+                    <li>Написал команду для Cursor, которая сократила поиск и устранение багов с часов до минут: по чётким инструкциям модель сразу анализирует факты и выдвигает одну сильную гипотезу, без лишнего диалога.</li>
+                    <li>За пару часов поднял MCP-сервер на Go для получения агентом удалённых логов - команде больше не нужно собирать их вручную.</li>
+                </ul>
+
+                <p class="group-title">Лидерство и процессы</p>
+                <ul>
+                    <li>Возглавил команду в октябре 2024 и выстроил планирование спринтов через оценку и декомпозицию задач - команда автономно грумит, планирует и закрывает цели примерно в 90% спринтов.</li>
+                    <li>Менторил новых разработчиков: ребята быстро выходили на самостоятельность без нагрузки на руководителя и со временем сами начинали вводить в курс дела новичков.</li>
+                    <li>Выстроил коммуникацию с другими отделами (в первую очередь с Маркетингом): единый список задач на спринт вместо десятка источников.</li>
+                    <li>Запустил регулярные встречи по System Design - на одной из них спроектировали новую систему авторизации.</li>
+                    <li>Провожу регулярные 1:1, работаю с мотивацией и блокерами, погружаюсь в продуктовые метрики (Retention и др.), чтобы понимать и доносить ценность задач для бизнеса.</li>
+                    <li>По итогам ревью 360 - удовлетворённость коллег моей работой 9,3 из 10.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Enaza Group — Backend Developer / DevOps Engineer</h3>
+                <p class="dates">сентябрь 2018 - апрель 2023</p>
+                <p class="summary">Enaza - продуктовая компания: дистрибуция игровых ключей и музыкальный стриминговый сервис под брендами операторов сотовой связи.</p>
+
+                <p class="subrole">Backend Developer <span class="subdates">(сентябрь 2018 - май 2021)</span></p>
+                <ul>
+                    <li>Развивал основное бэкенд-приложение на Yii2; какое-то время целиком отвечал за бэкенд и техническую коммуникацию с внутренними и внешними заказчиками - фактически в роли старшего разработчика.</li>
+                    <li>Через TDD перевёл приложение с Elasticsearch 5.3.3 на 7.8, разобравшись с API и работой поиска.</li>
+                    <li>Работал с горизонтальным масштабированием (load balancer + несколько бэкенд-серверов), Redis для кэширования, RabbitMQ для асинхронной обработки и фоновых задач, Codeception для автотестов, Docker для локальной разработки и CI.</li>
+                </ul>
+
+                <p class="subrole">DevOps Engineer / Infrastructure Lead <span class="subdates">(июнь 2021 - сентябрь 2022)</span></p>
+                <ul>
+                    <li>Руководил небольшой инфраструктурной командой (SRE и два системных администратора).</li>
+                    <li>Разрабатывал инфраструктуру под процессы разработки и тестирования: GitLab CI/CD, Kubernetes, Bash, Microsoft Azure.</li>
+                    <li>Спроектировал мониторинг с бизнес-метриками и внедрил распределённую трассировку (Jaeger) - стало проще и быстрее отслеживать пользовательские запросы в микросервисной архитектуре.</li>
+                </ul>
+
+                <p class="subrole">Backend Developer <span class="subdates">(сентябрь 2022 - апрель 2023)</span></p>
+                <ul>
+                    <li>Вернулся в бэкенд-разработку, уже с пониманием эксплуатации изнутри - это заметно помогает принимать решения по производительности и надёжности.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>ИА "Медиана" — PHP Developer</h3>
+                <p class="dates">март 2018 - сентябрь 2018</p>
+                <p class="summary">Портал о недвижимости Пермского края (аналог ЦИАН) и сервис сделок для риелторов (pmls.ru). Кодовая база на Ruby on Rails и PHP 5.4, несколько БД (MySQL, PostgreSQL) с синхронизацией данных между собой.</p>
+                <ul>
+                    <li>Ускорил загрузку объявлений с 30 секунд до одной, найдя и переписав медленные SQL-запросы.</li>
+                    <li>Оптимизировал работу со статикой, чтобы сократить занимаемое место на СХД.</li>
+                    <li>Разобрался в процессах синхронизации данных между БД и задокументировал их.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Xsolla — Junior Software Engineer</h3>
+                <p class="dates">июль 2017 - ноябрь 2017</p>
+                <p class="summary">Сервис аналитики для игровой индустрии на микрофреймворке Silex. Первый коммерческий опыт в продуктовой команде: Kanban, оценка задач, митапы.</p>
+                <ul>
+                    <li>Писал и чинил парсеры данных из Facebook, Twitter, LinkedIn и игровых площадок.</li>
+                    <li>Приводил в порядок "грязные" пользовательские данные в БД, вплоть до доопределения адресов через Google Maps API.</li>
+                    <li>Работал и с чистым SQL (PostgreSQL), и с Doctrine ORM.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Повышение квалификации</h2>
+            <ul class="quals">
+                <li>TeamLead Conf (2025).</li>
+                <li>DevOpsConf (участник, трижды).</li>
+                <li>Microsoft OpenHack: Containers (2021).</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>
