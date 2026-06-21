@@ -452,8 +452,36 @@
                 document.body.removeChild(ta);
             }
 
-            btn.addEventListener('click', function () {
-                copyUrl(window.location.href);
+            function canShare(data) {
+                return !navigator.canShare || navigator.canShare(data);
+            }
+
+            btn.addEventListener('click', async function () {
+                var url = window.location.href;
+
+                if (navigator.share) {
+                    var payloads = [
+                        {
+                            title: document.title,
+                            text: 'Senior / Lead Backend Developer — резюме',
+                            url: url
+                        },
+                        { title: document.title, url: url },
+                        { url: url }
+                    ];
+
+                    for (var i = 0; i < payloads.length; i++) {
+                        if (!canShare(payloads[i])) continue;
+                        try {
+                            await navigator.share(payloads[i]);
+                            return;
+                        } catch (err) {
+                            if (err.name === 'AbortError') return;
+                        }
+                    }
+                }
+
+                copyUrl(url);
             });
         })();
     </script>
