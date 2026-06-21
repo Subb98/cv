@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://subb98.github.io/cv/sitemap.xml
