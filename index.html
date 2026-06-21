@@ -12,7 +12,10 @@
     <meta property="og:title" content="Владислав Субботин — Senior / Lead Backend Developer">
     <meta property="og:description" content="Владислав Субботин — Senior/Lead Backend Developer, 9 лет опыта. PHP/Symfony, Go, Python, Kafka, Kubernetes. Team Lead, HighLoad, RAG, AI-агенты. Удалённо.">
     <meta property="og:url" content="https://subb98.github.io/cv/">
-    <meta property="og:image" content="https://subb98.github.io/cv/cv.jpg">
+    <meta property="og:image" content="https://subb98.github.io/cv/cv.webp">
+    <meta property="og:image:width" content="640">
+    <meta property="og:image:height" content="640">
+    <meta property="og:image:alt" content="Владислав Субботин, Senior/Lead Backend Developer">
     <meta property="profile:first_name" content="Владислав">
     <meta property="profile:last_name" content="Субботин">
     <style>
@@ -22,6 +25,7 @@
             --accent: #0b5cad;
             --line: #e3e6ea;
             --bg: #ffffff;
+            --status: #2d8a56;
         }
 
         * { box-sizing: border-box; }
@@ -58,6 +62,7 @@
         .header img {
             width: 240px;
             height: auto;
+            aspect-ratio: 1 / 1;
             border-radius: 8px;
             flex-shrink: 0;
         }
@@ -81,6 +86,24 @@
         }
 
         .header .meta b { color: var(--text); }
+
+        .header .status-value {
+            color: var(--status);
+            font-weight: 500;
+        }
+
+        .header .status-value::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--status);
+            margin-left: 2px;
+            margin-right: 6px;
+            vertical-align: 0.05em;
+            opacity: 0.85;
+        }
 
         /* Sections */
         h2 {
@@ -160,7 +183,7 @@
     "name": "Владислав Субботин",
     "jobTitle": "Senior / Lead Backend Developer",
     "url": "https://subb98.github.io/cv/",
-    "image": "https://subb98.github.io/cv/cv.jpg",
+    "image": "https://subb98.github.io/cv/cv.webp",
     "description": "Бэкендер с 9 годами опыта в продуктовой разработке. Senior Backend Developer и тимлид команды 5–7 человек в BotHelp (с октября 2024). HighLoad, PHP/Symfony, Go, Python, Kafka, RabbitMQ, Kubernetes, Elasticsearch. RAG, AI-агенты, MCP. Удалённо.",
     "sameAs": ["https://t.me/subbotinv"],
     "worksFor": {
@@ -169,11 +192,7 @@
     },
     "hasOccupation": {
       "@type": "Occupation",
-      "name": "Senior / Lead Backend Developer",
-      "occupationLocation": {
-        "@type": "Place",
-        "name": "Remote"
-      }
+      "name": "Senior / Lead Backend Developer"
     },
     "knowsAbout": [
       "PHP",
@@ -197,28 +216,16 @@
   }
 }
 </script>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function(m,e,t,r,i,k,a){
-            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();
-            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109943912', 'ym');
-
-        ym(109943912, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/109943912" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
 </head>
 <body>
     <main class="page">
 
         <header class="header">
-            <img src="cv.jpg" alt="Владислав Субботин, Senior/Lead Backend Developer" width="240">
+            <img src="cv.webp" alt="Владислав Субботин, Senior/Lead Backend Developer" width="240" height="240">
             <div>
                 <h1 class="name">Владислав Субботин</h1>
                 <p class="role">Senior / Lead Backend Developer</p>
+                <p class="meta"><b>Статус:</b> <span class="status-value">Открыт к предложениям</span></p>
                 <p class="meta">Коммерческий опыт: 9 лет<br>Локация: удалённо</p>
                 <p class="meta"><b>Основной стек:</b><br>PHP, Symfony, MySQL, PostgreSQL, RabbitMQ, Kafka, Elasticsearch, Redis, Linux, Bash, Nginx, GitLab CI/CD, Docker, Kubernetes</p>
                 <p class="meta"><b>Дополнительно:</b><br>Python, TypeScript, Go, ClickHouse, YDB, Grafana, Prometheus, Loki, Jaeger (OpenTelemetry)</p>
@@ -321,5 +328,19 @@
         </section>
 
     </main>
+
+    <!-- Yandex.Metrika counter -->
+    <script>
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109943912', 'ym');
+
+        ym(109943912, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/109943912" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </body>
 </html>
